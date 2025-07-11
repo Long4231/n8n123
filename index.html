@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Demo Site</title>
+</head>
+<body>
+  <h1>Welcome to Demo Site</h1>
+  <p>This is a simple demo page for testing the chat widget.</p>
+
+  <!-- Botpress Webchat -->
+  <script src="https://cdn.jsdelivr.net/npm/@botpress/webchat@0.37.0/botpressWebChat.min.js"></script>
+  <script>
+    window.botpressWebChat.init({
+      host: "https://loginai.app.n8n.cloud",
+      botId: "webhook/97f45174-b8b0-4756-b8d5-d100e0d15728/chat", // https://logaivn.app.n8n.cloud/webhook/10b6a3f9-80b4-4881-8c82-311736b8fdfa/chat
+      messagingUrl: "https://loginai.app.n8n.cloud",
+      enableReset: true,
+      showPoweredBy: false
+    });
+  </script>
+</body>
+</html>
