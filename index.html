@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>n8n Chat Demo</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@n8n/chat/style.css">
-  </head>
-  <body>
-    <h1>Welcome to n8n Chat Test</h1>
-
-    <script src="https://cdn.jsdelivr.net/npm/@n8n/chat"></script>
-    <script>
-      window.n8nChat.createChat({
-        webhookUrl: 'https://logaivn.app.n8n.cloud/webhook/10b6a3f9-80b4-4881-8c82-311736b8dfda/chat'
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Widget Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+      createChat({
+        webhookUrl: 'https://logaivn.app.n8n.cloud/webhook/10b6a3f9-80b4-4881-8c82-311736b8fdfa/chat',
       });
     </script>
+  </head>
+  <body>
+    <h1>Welcome to Demo Site</h1>
+    <p>This is a simple demo page for testing the chat widget.</p>
   </body>
 </html>
